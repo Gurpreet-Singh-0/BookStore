@@ -11,3 +11,11 @@
   color:white;
   font-size: 20px;
 }
+.card-text {
+  display: -webkit-box; /* Enables multi-line truncation */
+  -webkit-line-clamp: 2; /* Limit to 3 lines */
+  -webkit-box-orient: vertical; /* Vertical box orientation */
+  overflow: hidden; /* Hide overflow content */
+  text-overflow: ellipsis; /* Show ellipsis when text overflows */
+  white-space: normal; /* Allow text to wrap */
+}
