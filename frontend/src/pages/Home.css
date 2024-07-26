@@ -1,0 +1,60 @@
+.Home-Page{
+    width: 100%;
+    min-height: 91.5vh;
+    max-height: auto;
+}
+.homeimg{
+    width: 400px;
+    height: 600px;
+}
+.viewBook{
+    text-decoration: none;
+    --c: goldenrod;
+    color: var(--c);
+    font-size: 16px;
+    border: 0.3em solid var(--c);
+    border-radius: 0.5em;
+    width: 12em;
+    height: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 3em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+}
+.viewBook span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+.viewBook:hover span {
+    transform: translateY(0) scale(2);
+}
+
+.viewBook span:nth-child(1) {
+    --n: 1;
+}
+
+.viewBook span:nth-child(2) {
+    --n: 2;
+}
+
+.viewBook span:nth-child(3) {
+    --n: 3;
+}
+
+.viewBook span:nth-child(4) {
+    --n: 4;
+}
