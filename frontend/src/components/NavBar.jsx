@@ -11,7 +11,9 @@ export default function NavBar() {
       borderRadius: "8px" 
     }}>
       <Container>
-        <Navbar.Brand href="/" style={{ color: 'white' }}>Book Store</Navbar.Brand>
+        <Navbar.Brand href="/" style={{ color: 'white',
+          fontWeight:"bold"
+         }}>Book Store</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
